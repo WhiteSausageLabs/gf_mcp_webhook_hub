@@ -176,7 +176,7 @@ Odoo Apps Store listing: pending publication. Planned listing URL: https://apps.
 
 Purchase-related support runs through the Odoo Apps Store messaging system or support@whitesausagelabs.com.
 
-Support covers confirmed bugs in the purchased Odoo 19 version. It does not include custom development, migration to other Odoo versions, or third-party integration setup.
+Support covers installation issues and confirmed bugs in the purchased Odoo 19 version. Custom development, migration to other Odoo versions, third-party platform setup, and custom integration work are not included. Statutory rights and the Odoo Apps refund policy remain unaffected.
 
 ## License
 
