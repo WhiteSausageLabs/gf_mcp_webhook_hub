@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.png" alt="MCP Webhook Hub by White Sausage Labs" width="100%">
+  <img src="assets/hero.jpg" alt="MCP Webhook Hub by White Sausage Labs" width="100%">
 </p>
 
 # MCP Webhook Hub for Odoo 19
@@ -28,6 +28,18 @@ MCP Webhook Hub keeps v1 intentionally narrow:
 - **Audit trail** — every request is logged with action, model, status, and IP
 - **Signed webhooks** — outbound event payloads use HMAC-SHA256
 - **Delivery logs** — response status, code, and body are tracked
+
+---
+
+## Product visuals
+
+![AI-safe Odoo access](assets/visual_architecture.jpg)
+
+![Security first](assets/visual_security.jpg)
+
+![Verified webhooks](assets/visual_webhooks.jpg)
+
+![Product-grade releases](assets/visual_release_gate.jpg)
 
 ---
 
