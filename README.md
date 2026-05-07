@@ -18,6 +18,12 @@
 </p>
 
 <p align="center">
+  <a href="https://whitesausagelabs.com">Website</a> ·
+  <a href="https://apps.odoo.com/apps/modules/19.0/gf_mcp_webhook_hub">Odoo Apps Store</a> ·
+  <a href="mailto:support@whitesausagelabs.com">Support</a>
+</p>
+
+<p align="center">
   <img src="assets/hero.jpg" alt="MCP Webhook Hub by White Sausage Labs" width="100%">
 </p>
 
@@ -164,11 +170,11 @@ Each release is checked before packaging:
 
 ## Availability
 
-Odoo Apps Store listing: coming soon.
+Odoo Apps Store listing: pending publication. Planned listing URL: https://apps.odoo.com/apps/modules/19.0/gf_mcp_webhook_hub
 
 ## Support
 
-Purchase-related support runs through the Odoo Apps Store messaging system.
+Purchase-related support runs through the Odoo Apps Store messaging system or support@whitesausagelabs.com.
 
 Support covers confirmed bugs in the purchased Odoo 19 version. It does not include custom development, migration to other Odoo versions, or third-party integration setup.
 
