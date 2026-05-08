@@ -2,24 +2,19 @@
 
 Secure MCP endpoint and signed webhook automation hub for Odoo
 
-## Module
+## Functional scope
+This addon follows standard Odoo UX patterns and is focused on one business use-case.
+
+## Technical
 - Technical name: `gf_mcp_webhook_hub`
 - Odoo version: `19.0`
-- Current module version: `19.0.1.0.4`
-- Dependencies: base, mail, sale, account, stock
-- License: OPL-1
-
-## Pricing
-Current list price: **210.0 EUR**
-
-## Support
-- Email: support@whitesausagelabs.com
-- Vendor: White Sausage Labs
+- Dependencies: `base, mail, sale, account, stock`
+- License: `OPL-1`
 
 ## Installation
-1. Copy addon into your Odoo addons path
-2. Update app list
-3. Install `gf_mcp_webhook_hub`
+1. Add `gf_mcp_webhook_hub` to your addons path
+2. Update Apps List
+3. Install the module
 
-## Notes
-This repository contains the addon source for packaging/release workflows.
+## Support
+support@whitesausagelabs.com
