@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gf_mcp_api_key_manager,gf.mcp.api.key manager,model_gf_mcp_api_key,gf_mcp_webhook_hub.group_mcp_webhook_manager,1,1,1,1
+access_gf_mcp_audit_log_manager,gf.mcp.audit.log manager,model_gf_mcp_audit_log,gf_mcp_webhook_hub.group_mcp_webhook_manager,1,1,1,0
+access_gf_webhook_rule_manager,gf.webhook.rule manager,model_gf_webhook_rule,gf_mcp_webhook_hub.group_mcp_webhook_manager,1,1,1,1
+access_gf_webhook_log_manager,gf.webhook.log manager,model_gf_webhook_log,gf_mcp_webhook_hub.group_mcp_webhook_manager,1,1,1,0

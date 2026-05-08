@@ -1,0 +1,43 @@
+<odoo>
+    <record id="view_gf_webhook_log_tree" model="ir.ui.view">
+        <field name="name">gf.webhook.log.tree</field>
+        <field name="model">gf.webhook.log</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" delete="0">
+                <field name="create_date"/>
+                <field name="rule_id"/>
+                <field name="event"/>
+                <field name="target_url"/>
+                <field name="status"/>
+                <field name="response_code"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_gf_webhook_log_form" model="ir.ui.view">
+        <field name="name">gf.webhook.log.form</field>
+        <field name="model">gf.webhook.log</field>
+        <field name="arch" type="xml">
+            <form create="0" edit="0" delete="0">
+                <sheet>
+                    <group>
+                        <field name="rule_id"/>
+                        <field name="event"/>
+                        <field name="target_url"/>
+                        <field name="status"/>
+                        <field name="signature"/>
+                        <field name="response_code"/>
+                    </group>
+                    <group>
+                        <field name="payload"/>
+                        <field name="response_body"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_gf_webhook_log" model="ir.actions.act_window">
+        <field name="name">Webhook Logs</field>
+        <field name="res_model">gf.webhook.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

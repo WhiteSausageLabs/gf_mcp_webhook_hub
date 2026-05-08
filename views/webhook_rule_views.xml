@@ -1,0 +1,42 @@
+<odoo>
+    <record id="view_gf_webhook_rule_tree" model="ir.ui.view">
+        <field name="name">gf.webhook.rule.tree</field>
+        <field name="model">gf.webhook.rule</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="active"/>
+                <field name="event"/>
+                <field name="target_url"/>
+                <field name="retry_count"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_gf_webhook_rule_form" model="ir.ui.view">
+        <field name="name">gf.webhook.rule.form</field>
+        <field name="model">gf.webhook.rule</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="test_signature" type="object" string="Create Test Log" class="btn-primary"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="event"/>
+                        <field name="target_url"/>
+                        <field name="secret" password="True"/>
+                        <field name="retry_count"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="action_gf_webhook_rule" model="ir.actions.act_window">
+        <field name="name">Webhook Rules</field>
+        <field name="res_model">gf.webhook.rule</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,9 @@
+<odoo>
+    <menuitem id="menu_gf_mcp_webhook_root" name="MCP/Webhook Hub" sequence="80" groups="gf_mcp_webhook_hub.group_mcp_webhook_manager"/>
+    <menuitem id="menu_gf_mcp_config" name="Configuration" parent="menu_gf_mcp_webhook_root" sequence="10"/>
+    <menuitem id="menu_gf_mcp_logs" name="Logs" parent="menu_gf_mcp_webhook_root" sequence="20"/>
+    <menuitem id="menu_gf_mcp_api_keys" name="MCP API Keys" parent="menu_gf_mcp_config" action="action_gf_mcp_api_key" sequence="10"/>
+    <menuitem id="menu_gf_webhook_rules" name="Webhook Rules" parent="menu_gf_mcp_config" action="action_gf_webhook_rule" sequence="20"/>
+    <menuitem id="menu_gf_mcp_audit_logs" name="MCP Audit Logs" parent="menu_gf_mcp_logs" action="action_gf_mcp_audit_log" sequence="10"/>
+    <menuitem id="menu_gf_webhook_logs" name="Webhook Logs" parent="menu_gf_mcp_logs" action="action_gf_webhook_log" sequence="20"/>
+</odoo>
