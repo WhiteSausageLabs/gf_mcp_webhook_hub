@@ -1,132 +1,20 @@
 <section class="oe_container" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12 text-center">
-            <img src="preview.png" alt="MCP Webhook Hub for Odoo 19" style="width:100%;max-width:1100px;border-radius:18px;border:1px solid #dde2ea;box-shadow:0 16px 44px rgba(25,31,45,.12);"/>
-        </div>
+  <div class="oe_row oe_spaced text-center">
+    <div class="oe_span12">
+      <h2 class="oe_slogan" style="color:#714B67;font-weight:800;">MCP Webhook Hub</h2>
+      <h3 class="oe_slogan" style="color:#555;font-weight:400;">Secure read-only MCP access and signed webhooks for Odoo 19</h3>
     </div>
+  </div>
 </section>
-
 <section class="oe_container" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
-    <div class="oe_row oe_spaced text-center">
-        <div class="oe_span12">
-            <h2 class="oe_slogan" style="color:#714B67;font-weight:800;">Controlled AI access and signed webhooks for Odoo 19</h2>
-            <h3 class="oe_slogan" style="color:#555;font-weight:400;">Read-only MCP endpoint, scoped API keys, audit logs, and business-event webhooks.</h3>
-            <p style="max-width:820px;margin:24px auto;font-size:18px;line-height:1.65;color:#555;">
-                MCP Webhook Hub lets technical Odoo teams expose selected data to AI agents and automation systems without enabling write, delete, or raw SQL operations.
-                Each API key is scoped to allowed models, requests are logged, and outbound webhook payloads are signed with HMAC-SHA256.
-            </p>
-        </div>
-    </div>
+  <div class="oe_row oe_spaced"><div class="oe_span12 text-center"><img src="main_screenshot.png" alt="MCP Webhook Hub main" style="width:100%;max-width:1100px;border-radius:14px;border:1px solid #dde2ea;box-shadow:0 10px 28px rgba(25,31,45,.12);"/></div></div>
 </section>
-
 <section class="oe_container oe_dark" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span4">
-            <h3 style="font-weight:800;color:#222;">Read-only endpoint</h3>
-            <p style="font-size:16px;line-height:1.6;color:#555;">
-                The v1 MCP endpoint supports list, search, read, and count operations only. No create, write, unlink, or raw SQL access is exposed.
-            </p>
-        </div>
-        <div class="oe_span4">
-            <h3 style="font-weight:800;color:#222;">Scoped API keys</h3>
-            <p style="font-size:16px;line-height:1.6;color:#555;">
-                Restrict each key to a model allowlist. Tokens are SHA-256 hashed at rest and displayed only as previews after creation.
-            </p>
-        </div>
-        <div class="oe_span4">
-            <h3 style="font-weight:800;color:#222;">Auditable delivery</h3>
-            <p style="font-size:16px;line-height:1.6;color:#555;">
-                Track allowed, denied, and error requests. Webhook deliveries keep status, response code, response body, and error information.
-            </p>
-        </div>
-    </div>
+  <div class="oe_row oe_spaced"><div class="oe_span6"><h3 style="font-weight:700;">Business Problem</h3><p style="font-size:16px;line-height:1.6;">AI and automation integrations often expose too much data access and leave weak audit trails.</p></div><div class="oe_span6"><h3 style="font-weight:700;">What this module does</h3><ul style="font-size:16px;line-height:1.7;"><li>Read-only MCP operations (list/search/read/count)</li><li>Scoped API keys with model allowlists</li><li>HMAC-signed webhook delivery with detailed logs</li></ul></div></div>
 </section>
-
 <section class="oe_container" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span6">
-            <h3 style="font-weight:800;color:#222;">MCP endpoint</h3>
-            <p style="font-size:16px;line-height:1.6;color:#555;">
-                Use <code>POST /gf_mcp_webhook_hub/mcp</code> with Bearer token authentication to provide controlled read access for agents, reporting tools, and workflow systems.
-            </p>
-            <table class="table table-bordered" style="background:white;">
-                <thead><tr><th>Action</th><th>Description</th></tr></thead>
-                <tbody>
-                    <tr><td><code>list_models</code></td><td>Show models available to the API key</td></tr>
-                    <tr><td><code>search</code></td><td>Search records by Odoo domain</td></tr>
-                    <tr><td><code>read</code></td><td>Read selected fields from selected records</td></tr>
-                    <tr><td><code>count</code></td><td>Count records matching a domain</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="oe_span6">
-            <h3 style="font-weight:800;color:#222;">Signed webhooks</h3>
-            <p style="font-size:16px;line-height:1.6;color:#555;">
-                Deliver selected Odoo business events to external HTTP endpoints. Payloads are signed with HMAC-SHA256 so receivers can verify authenticity.
-            </p>
-            <table class="table table-bordered" style="background:white;">
-                <thead><tr><th>Event</th><th>Trigger</th></tr></thead>
-                <tbody>
-                    <tr><td><code>sale_order_confirmed</code></td><td>Quotation is confirmed</td></tr>
-                    <tr><td><code>invoice_posted</code></td><td>Invoice or credit note is posted</td></tr>
-                    <tr><td><code>stock_picking_done</code></td><td>Delivery or receipt is validated</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+  <div class="oe_row oe_spaced"><div class="oe_span12 text-center"><img src="screenshot_1.png" alt="MCP Webhook Hub feature" style="width:100%;max-width:1100px;border-radius:14px;border:1px solid #dde2ea;box-shadow:0 10px 28px rgba(25,31,45,.12);"/></div></div>
 </section>
-
 <section class="oe_container oe_dark" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
-    <div class="oe_row oe_spaced text-center">
-        <div class="oe_span12">
-            <h2 class="oe_slogan" style="color:#714B67;font-weight:800;">Odoo interface</h2>
-            <p style="max-width:760px;margin:12px auto 32px;font-size:16px;line-height:1.65;color:#555;">
-                Configuration and logs use standard Odoo views, permissions, and access groups.
-            </p>
-        </div>
-        <div class="oe_span6"><img src="main_screenshot.png" style="width:100%;border-radius:12px;border:1px solid #dde2ea;box-shadow:0 10px 28px rgba(25,31,45,.10);" alt="MCP API Keys"/><h4>MCP API Keys</h4></div>
-        <div class="oe_span6"><img src="screenshot_webhook_rules.png" style="width:100%;border-radius:12px;border:1px solid #dde2ea;box-shadow:0 10px 28px rgba(25,31,45,.10);" alt="Webhook Rules"/><h4>Webhook Rules</h4></div>
-    </div>
-    <div class="oe_row oe_spaced text-center">
-        <div class="oe_span6"><img src="screenshot_audit_logs.png" style="width:100%;border-radius:12px;border:1px solid #dde2ea;box-shadow:0 10px 28px rgba(25,31,45,.10);" alt="MCP Audit Logs"/><h4>MCP Audit Logs</h4></div>
-        <div class="oe_span6"><img src="screenshot_webhook_logs.png" style="width:100%;border-radius:12px;border:1px solid #dde2ea;box-shadow:0 10px 28px rgba(25,31,45,.10);" alt="Webhook Logs"/><h4>Webhook Delivery Logs</h4></div>
-    </div>
-</section>
-
-<section class="oe_container" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span6">
-            <h3 style="font-weight:800;color:#222;">Technical details</h3>
-            <ul style="font-size:16px;line-height:1.8;color:#555;">
-                <li>Odoo 19.0</li>
-                <li>Dependencies: base, mail, sale, account, stock</li>
-                <li>License: OPL-1</li>
-                <li>No external Python packages required</li>
-                <li>Dedicated MCP/Webhook Hub Manager access group</li>
-            </ul>
-        </div>
-        <div class="oe_span6">
-            <h3 style="font-weight:800;color:#222;">Release checks</h3>
-            <ul style="font-size:16px;line-height:1.8;color:#555;">
-                <li>Docker install test on Odoo 19</li>
-                <li>19 module tests passing</li>
-                <li>Static module checks</li>
-                <li>Manifest validation</li>
-                <li>Clean release packaging</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="oe_container oe_dark" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
-    <div class="oe_row oe_spaced text-center">
-        <div class="oe_span12">
-            <h3 style="font-weight:800;color:#222;">Support scope</h3>
-            <p style="max-width:760px;margin:16px auto;font-size:16px;line-height:1.65;color:#555;">
-                Support covers installation issues and confirmed bugs in the purchased Odoo 19 version.
-                Custom development, migrations to other Odoo versions, third-party platform setup, and custom integration work are not included.
-                Statutory rights and the Odoo Apps refund policy remain unaffected.
-            </p>
-        </div>
-    </div>
+  <div class="oe_row oe_spaced"><div class="oe_span12"><h3 style="font-weight:700;">Support</h3><p style="font-size:16px;line-height:1.6;">support@whitesausagelabs.com</p></div></div>
 </section>
